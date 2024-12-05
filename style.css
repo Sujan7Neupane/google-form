@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+#main-section {
+  background-color: rgb(231, 231, 241);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 5rem;
+  width: 100%;
+}
+.signup-auto,
+.signup-form-fill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.868);
+  border-radius: 10px;
+  width: 30%;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  width: 100%;
+}
+
+.btn-wrapper button,
+.signup-form-fill button {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.btn-wrapper button i,
+.signup-form-fill button i {
+  font-size: 1.2rem;
+}
+
+.btn-wrapper button:nth-of-type(2),
+.signup-form-fill button:nth-of-type(1) {
+  background-color: #000000;
+  color: #fff;
+}
+
+.signup-auto span a,
+.signup-form-fill span a {
+  text-decoration: none;
+}
+
+.signup-auto span a:visited {
+  color: blue;
+}
+
+.line-through {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.line-through::before,
+.line-through::after {
+  content: "";
+  flex-grow: 1;
+  border-top: 1px solid rgba(125, 125, 125, 0.374);
+  margin: 0 10px;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 0.5px solid rgba(128, 128, 128, 0.699);
+}
+
+form input:focus {
+  border: 0.5px solid rgba(17, 0, 202, 0.699);
+}
