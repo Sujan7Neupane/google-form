@@ -26,9 +26,20 @@
           <h1 class="form-title">SignUp</h1>
           <p class="desc">Join is now! Sign up to kick-start your jour</p>
           <form action="#">
-            <input type="text" name="name" id="name" placeholder="Name" />
-            <input type="email" name="name" id="name" placeholder="Email" />
-            <input type="password" name="name" id="name" placeholder="Password" />
+            <div class="form-wrapper">
+              <input type="text" name="name" id="name" />
+              <label for="name" class="form-placeholder">Name</label>
+            </div>
+            <div class="form-wrapper">
+              <input type="email" name="name" id="email" />
+              <label for="email" class="form-placeholder">Email</label>
+            </div>
+
+            <div class="form-wrapper">
+              <input type="password" name="name" id="password" />
+              <label for="password" class="form-placeholder">Password</label>
+            </div>
+
           </form>
           <button><i class="bx bxs-envelope"></i>Sign up with Email</button>
           <span>Already have an account? <a href="#">Log in</a></span>
